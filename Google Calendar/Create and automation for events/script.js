@@ -13,7 +13,7 @@ function myFunction()
   
   for(let i = 7, emptyRows = 0 ; i < spreadsheet.getMaxRows() && emptyRows < maxEmptyRows; i++)
   {
-      let name = spreadsheet.getRange("B"+ i).getValue();
+      let name = spreadsheet.getRange("B" + i).getValue();
       let date = spreadsheet.getRange("A" + i).getValue();
 
       if(name === "" || date === "") {
