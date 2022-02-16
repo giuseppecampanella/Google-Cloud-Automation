@@ -8,9 +8,7 @@ function myFunction()
   let eventCal = CalendarApp.getCalendarById(calendarId);
 
   let startDate = new Date(year + "/01/01");  
-  console.log(startDate);
   let endDate = new Date(year + "/12/31");
-  console.log(endDate);
   deleteEvents(eventCal, startDate, endDate)
   
   for(let i = 7, emptyRows = 0 ; i < spreadsheet.getMaxRows() && emptyRows < maxEmptyRows; i++)
@@ -33,9 +31,6 @@ function myFunction()
 
 function deleteEvents(calendar, startDate, endDate) {
     var events = calendar.getEvents(startDate, endDate);
-    console.log(events.length);
-    console.log(startDate);
-    console.log(endDate);
     for(let i = 0; i < events.length; i++) {
       let event = events[i];
       if(event.getTitle().startsWith("Compleanno ")){
