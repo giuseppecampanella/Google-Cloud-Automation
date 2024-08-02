@@ -7,4 +7,4 @@ Steps:
 * Copy the tabs and columns you find inside the spreadsheet.xlsx file in the Google Cloud Spreadhseet
 
 Base Spreadsheet file:
-
+![image](picture.png)
